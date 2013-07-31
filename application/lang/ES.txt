@@ -1,2 +1,0 @@
-users = Usuarios
-title = Datos de prueba

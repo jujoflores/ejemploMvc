@@ -10,15 +10,15 @@
 	<body>
 		<div id="wrapper">
 			<div id="header">
-				<h1><?php echo $lang->translate('title')?></h1>
+				<h1><?php echo $this->lang->translate('title')?></h1>
 			</div><!-- #header-->
 			<div id="middle">
 				<div id="container">
 					<div id="content">
-						<h2><?php echo $lang->translate('users')?></h2>
-						<?php foreach($usuarios as $usuario){?>
+						<h2><?php echo $this->lang->translate('users')?></h2>
+						<?php foreach($this->users as $user){?>
 							<div>
-							<?php echo $usuario['nombre']?>
+							<?php echo $user['name']?>
 							</div>
 						<?php }?>
 					</div><!-- #content-->

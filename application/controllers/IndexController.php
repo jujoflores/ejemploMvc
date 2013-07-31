@@ -1,18 +1,18 @@
 <?php
-require_once '../application/models/InicioModel.php';
+require_once $config->get('modelsFolder') . 'IndexModel.php';
 
 class IndexController extends ControllerBase{
 
-    private $_inicio;
+    private $_model;
 
     public function init(){
-        $this->_inicio = new InicioModel();
+        $this->_model = new IndexModel();
     }
 
     public function index(){
-        $data['lang'] = $this->_inicio->getLang();
-        $data['usuarios'] = $this->_inicio->getUsers();
-        $this->_view->show('inicio/principal.php', $data);
+        $data['lang'] = $this->_model->getLang();
+        $data['users'] = $this->_model->getUsers();
+        $this->_view->show('index/main.php', $data);
     }
     
 }
