@@ -18,6 +18,9 @@ $config->set('projectEmailFrom', '');
 $config->set('sessionName', 'test');
 
 //[Development]
+$config->set('baseRedirect', '/github/ejemploMvc/');
+$config->set('baseUrl', '/github/ejemploMvc/public/');
+
 $config->set('dbhost', 'localhost');
 $config->set('dbname', 'test');
 $config->set('dbuser', 'user');
